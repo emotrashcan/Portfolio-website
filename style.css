@@ -1,96 +1,91 @@
-body {
-  font-family: Arial, sans-serif;
+/* General styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f8fa;
   color: #333;
-  max-width: 375px; 
-  margin: 0 auto; 
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Force a static mobile width container */
+.container {
+  width: 375px; /* Typical mobile width */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
-  background-color: #4caf50; 
-  color: white;
-  padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .logo {
-  font-size: 1.2em; 
+  font-size: 1.2rem;
   font-weight: bold;
+  color: #5964e0;
 }
 
-.container {
-  padding: 15px; 
-  text-align: center;
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-h1 {
-  font-size: 1.5em; 
-  margin: 10px 0; 
+main {
+  margin-top: 40px;
+  max-width: 100%;
 }
 
-p {
-  font-size: 0.875em; 
-  line-height: 1.5; 
-  margin: 10px 0;
+.intro h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-align: left;
+  line-height: 1.3;
 }
 
-.contact {
+.intro p {
   margin-top: 20px;
+  font-size: 0.95rem;
+  color: #606060;
+  line-height: 1.6;
+  text-align: left;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
+.social-links {
+  margin-top: 30px;
+  text-align: left;
 }
 
-.social-icon {
-  width: 40px; 
-  height: 40px;
-  background-color: #4caf50; 
-  color: white;
-  border-radius: 50%;
+.social-links p {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Align icons in a row */
+.icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px; /* Add some spacing between the icons */
+  margin-top: 10px;
+}
+
+.icons a {
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1em; 
+  color: #5964e0;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
-.footer {
-  margin-top: 20px;
-  font-size: 0.875em; 
-  color: #777;
-  text-align: center;
-}
-
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-
-.circle-small {
-  width: 20px; 
-  height: 20px;
-  background-color: #ff5722; 
-  top: 10%; 
-  left: 10%;
-}
-
-.circle-large {
-  width: 40px; 
-  height: 40px;
-  background-color: #3f51b5; 
-  top: 20%; 
-  right: 10%;
-}
-
-.circle-small:nth-child(3) {
-  bottom: 10%; 
-  left: 20%;
+.icons a:hover {
+  color: #333;
 }
