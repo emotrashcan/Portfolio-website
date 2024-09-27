@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 375px; 
+    margin: 0 auto; 
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.container {
+    padding: 10px; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px; 
+    margin: 5px 0; 
+    color: #333;
+}
+
+p {
+    font-size: 12px; 
+    line-height: 1.4; 
+    margin: 10px 0;
+}
+
+.contact {
+    margin-top: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px; 
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px; 
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 12px; 
+    color: #777;
+    text-align: center;
+}
+
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.circle-small {
+    width: 20px; 
+    height: 20px;
+    background-color: #FF5722;
+}
+
+.circle-large {
+    width: 40px; 
+    height: 40px;
+    background-color: #3F51B5;
+}
